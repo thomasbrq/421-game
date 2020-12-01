@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    text-align: center;
+    font-family: Arial;
+    background-color: #5EAAA8;
+}
+
+.separator {
+    margin-top: 240px;
+}
+
+/* 3D Cube */
+
+.space3d {
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+._3dbox {
+    display: inline-block;
+    transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+}
+
+._3dface {
+    overflow: hidden;
+    position: absolute;
+    border: 1px solid #888;
+    background: #FFF;
+    color: #333;
+    line-height: 250px;
+}
+
+._3dface--front {
+    width: 250px;
+    height: 250px;
+    transform: translate3d(0, 0, 125px);
+}
+
+._3dface--top {
+    width: 250px;
+    height: 250px;
+    transform: rotateX(90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--bottom {
+    width: 250px;
+    height: 250px;
+    transform: rotateX(-90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--left {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    margin-left: -125px;
+    transform: rotateY(-90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--right {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    margin-left: -125px;
+    transform: rotateY(90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--back {
+    width: 250px;
+    height: 250px;
+    transform: rotateY(180deg) translate3d(0, 0, 125px);
+}
+
+._3dbox-1 {
+    display: inline-block;
+    transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+}
+
+._3dbox-2 {
+    display: inline-block;
+    transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+}
+
+._3dface--front {
+    background-image: url('../img/1.png');
+    background-size: cover;
+}
+
+._3dface--left {
+    background-image: url('../img/2.png');
+    background-size: cover;
+}
+
+._3dface--right {
+    background-image: url('../img/3.png');
+    background-size: cover;
+}
+
+._3dface--top {
+    background-image: url('../img/4.png');
+    background-size: cover;
+}
+
+._3dface--bottom {
+    background-image: url('../img/5.png');
+    background-size: cover;
+}
+
+._3dface--back {
+    background-image: url('../img/6.png');
+    background-size: cover;
+}
+
+.points {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 25px;
+}
+
+.styled {
+    width: 237px;
+    height: 62px;
+    background: #056676;
+    border-radius: 65px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+    color: #FFFFFF;
+    border: none;
+}
+
+.styled:focus {
+    outline: none;
+}
+
+.styled:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #00000052, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #00000052, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.sep {
+    margin-top: 70px;
+    width: 100%;
+    height: 50px;
+}
+
+.howtp {
+    display: block;
+    width: 100%;
+    height: 280px;
+    background: #228481;
+    margin-top: 25px;
+}
+
+.rules {
+    height: 280px;
+    width: 30%;
+    float: left;
+}
+
+.combinations {
+    height: 280px;
+    width: 70%;
+    float: right;
+}
+
+h1 {
+    color: white;
+    padding-top: 40px;
+    font-size: 36px;
+}
+
+span {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    height: 100%;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    width: auto;
+    height: auto;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: auto;
+    height: auto;
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 2;
+    width: auto;
+    height: 93px;
+}
+
+.div4 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: auto;
+    height: auto;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: auto;
+    height: auto;
+}
+
+.div6 {
+    grid-area: 3 / 2 / 4 / 3;
+    width: auto;
+    height: 93px;
+}
+
+.dice-1 {
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+.dice-2 {
+    background-image: url("../img/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+.dice-4 {
+    background-image: url("../img/4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+.dice-5 {
+    background-image: url("../img/5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+.dice-6 {
+    background-image: url("../img/6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+.dice {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+h3 {
+    position: absolute;
+    color: white;
+    margin-top: 25px;
+    margin-left: 300px;
+    font-size: 1.875vw;
+}
+
+.r-left {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 180px;
+    height: 90px;
+}
+
+h4 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h5 {
+    color: white;
+    font-size: 48px;
+}
+
+.logout {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    width: 144px;
+    height: 37px;
+    padding: 10px 10px 20px 10px;
+    top: 50px;
+    right: 150px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.nbr_total {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    top: 50px;
+    left: 44%;
+    width: 230px;
+    height: 35px;
+
+}
+
+.pn {
+    margin-top: 10px;
+}

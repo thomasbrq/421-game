@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:60948/index.html -->
+<html data-brackets-id="141" lang="en">
+
+<head data-brackets-id="142">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title data-brackets-id="144">Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+<body data-brackets-id="146" translate="no" onload="">
+    <!-- CONTROLS -->
+
+    <div data-brackets-id="153" class="separator">
+        <div class="r-left">
+            <h4>
+                Rolls left :
+            </h4>
+            <h5 class="r_left"></h5>
+        </div>
+        <div class="nbr_total">
+            <h4>Total points :</h4>
+            <h5 class="pn"><?php echo $resultat['total_points'] ?></h5>
+        </div>
+        <a href="deconnexion.php" class="logout">Log out</a>
+    </div>
+
+    <div data-brackets-id="154" class="space3d">
+
+        <div data-brackets-id="155" class="_3dbox">
+            <div data-brackets-id="156" class="_3dface _3dface--front"></div>
+            <div data-brackets-id="157" class="_3dface _3dface--top"></div>
+            <div data-brackets-id="158" class="_3dface _3dface--bottom"></div>
+            <div data-brackets-id="159" class="_3dface _3dface--left"></div>
+            <div data-brackets-id="160" class="_3dface _3dface--right"></div>
+            <div data-brackets-id="161" class="_3dface _3dface--back"></div>
+        </div>
+
+    </div>
+
+    <div data-brackets-id="154" class="space3d">
+
+
+        <div data-brackets-id="155" class="_3dbox-1">
+            <div data-brackets-id="156" class="_3dface _3dface--front"></div>
+            <div data-brackets-id="157" class="_3dface _3dface--top"></div>
+            <div data-brackets-id="158" class="_3dface _3dface--bottom"></div>
+            <div data-brackets-id="159" class="_3dface _3dface--left"></div>
+            <div data-brackets-id="160" class="_3dface _3dface--right"></div>
+            <div data-brackets-id="161" class="_3dface _3dface--back"></div>
+        </div>
+
+    </div>
+
+    <div data-brackets-id="154" class="space3d">
+
+
+        <div data-brackets-id="155" class="_3dbox-2">
+            <div data-brackets-id="156" class="_3dface _3dface--front"></div>
+            <div data-brackets-id="157" class="_3dface _3dface--top"></div>
+            <div data-brackets-id="158" class="_3dface _3dface--bottom"></div>
+            <div data-brackets-id="159" class="_3dface _3dface--left"></div>
+            <div data-brackets-id="160" class="_3dface _3dface--right"></div>
+            <div data-brackets-id="161" class="_3dface _3dface--back"></div>
+        </div>
+
+    </div>
+
+    <div data-brackets-id="162" class="sep">
+        <input data-brackets-id="163" class="favorite styled" type="button" value="PLAY" onclick="lancer();">
+    </div>
+
+    <p class="points"></p>
+
+    <div class="howtp">
+        <div class="rules">
+            <h1>How to play?</h1>
+            <span>You start the game with 50 rolls.</span>
+            <span>Get one of these combinations and win as many points as possible</span>
+        </div>
+
+        <div class="combinations">
+            <div class="parent">
+                <div class="div1">
+                    <div class="dice dice-4"></div>
+                    <div class="dice dice-2"></div>
+                    <div class="dice dice-1"></div>
+                    <h3>= 10 points</h3>
+                </div>
+
+                <div class="div2">
+                    <div class="dice dice-1"></div>
+                    <div class="dice dice-1"></div>
+                    <div class="dice dice-1"></div>
+                    <h3>= 7 points</h3>
+                </div>
+
+                <div class="div3">
+                    <div class="dice dice-6"></div>
+                    <div class="dice dice-1"></div>
+                    <div class="dice dice-1"></div>
+                    <h3>= 6 points</h3>
+                </div>
+
+                <div class="div4">
+                    <div class="dice dice-6"></div>
+                    <div class="dice dice-6"></div>
+                    <div class="dice dice-6"></div>
+                    <h3>= 6 points</h3>
+                </div>
+
+                <div class="div5">
+                    <div class="dice dice-5"></div>
+                    <div class="dice dice-5"></div>
+                    <div class="dice dice-5"></div>
+                    <h3>= 5 points</h3>
+                </div>
+
+                <div class="div6">
+                    <div class="dice dice-4"></div>
+                    <div class="dice dice-1"></div>
+                    <div class="dice dice-1"></div>
+                    <h3>= 4 points</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
